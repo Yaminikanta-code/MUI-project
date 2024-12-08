@@ -1,8 +1,45 @@
-# React + Vite
+# Simple Responsive UI with Dark and Light Mode using Material-UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates a responsive UI layout with a **Navbar**, **Sidebar**, **Feed**, and **Rightbar**. It also includes a **Dark and Light Mode** toggle functionality using Material-UI's `ThemeProvider`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Navbar**: Displays the app title and icons for notifications and messages.
+- **Sidebar**: Contains navigation links.
+- **Feed**: Displays the main content area.
+- **Rightbar**: Contains additional information or widgets.
+- **Mobile Responsiveness**: Adjusts the layout for smaller screens by hiding or collapsing components.
+- **Dark and Light Mode**: Users can toggle between dark and light themes.
+
+---
+
+## Technologies Used
+
+- **React.js**: For building the user interface.
+- **Material-UI (MUI)**: For styling and components.
+- **Responsive Design**: Utilizes Material-UI's `Box`, `Stack`, and `breakpoints`.
+- **Dark and Light Mode**: Leveraging Material-UI's `createTheme` and `ThemeProvider`.
+
+---
+
+## Demo
+
+### Desktop View
+
+- Displays all four sections: Navbar, Sidebar, Feed, and Rightbar.
+
+### Tablet View
+
+- Rightbar are hidden or collapsed.
+- Navbar and Feed adjust to fit tablet screens.
+
+### Mobile View
+
+- Sidebar and Rightbar are hidden or collapsed.
+- Navbar and Feed adjust to fit smaller screens.
+
+### Dark and Light Mode
+
+- Users can switch themes using a toggle button in the Sidebar.
