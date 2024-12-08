@@ -1,9 +1,12 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 function Feed() {
   return (
     <>
-      <div>Feed</div>
+      <Box bgcolor="red" flex={4} p={2}>
+        Feed
+      </Box>
     </>
   );
 }
