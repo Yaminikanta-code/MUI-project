@@ -24,8 +24,6 @@ This project demonstrates a responsive UI layout with a **Navbar**, **Sidebar**,
 
 ---
 
-## Demo
-
 ### Desktop View
 
 - Displays all four sections: Navbar, Sidebar, Feed, and Rightbar.
