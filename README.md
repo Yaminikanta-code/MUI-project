@@ -11,7 +11,7 @@ This project demonstrates a responsive UI layout with a **Navbar**, **Sidebar**,
 - **Feed**: Displays the main content area.
 - **Rightbar**: Contains additional information or widgets.
 - **Mobile Responsiveness**: Adjusts the layout for smaller screens by hiding or collapsing components.
-- **Dark and Light Mode**: Users can toggle between dark and light themes.
+- **Dark and Light Mode**: Users can switch themes using a toggle button in the Sidebar.
 
 ---
 
@@ -23,6 +23,8 @@ This project demonstrates a responsive UI layout with a **Navbar**, **Sidebar**,
 - **Dark and Light Mode**: Leveraging Material-UI's `createTheme` and `ThemeProvider`.
 
 ---
+
+## Layout
 
 ### Desktop View
 
@@ -37,7 +39,3 @@ This project demonstrates a responsive UI layout with a **Navbar**, **Sidebar**,
 
 - Sidebar and Rightbar are hidden or collapsed.
 - Navbar and Feed adjust to fit smaller screens.
-
-### Dark and Light Mode
-
-- Users can switch themes using a toggle button in the Sidebar.
