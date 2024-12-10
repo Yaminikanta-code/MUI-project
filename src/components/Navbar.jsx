@@ -155,7 +155,13 @@ const Navbar = () => {
             ></path>
           </svg>
         </Box>
-        <Search>
+        <Search
+          sx={{
+            bgcolor: "background.default",
+            color: "text.primary",
+            padding: "1px 10px",
+          }}
+        >
           <InputBase placeholder="search..." />
         </Search>
         <Icons>

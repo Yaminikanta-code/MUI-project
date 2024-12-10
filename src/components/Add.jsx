@@ -47,7 +47,9 @@ const Add = () => {
           backgroundColor: "#fb8c00",
           "&:hover": {
             backgroundColor: "#ff9800",
+            cursor: "pointer",
           },
+          color: "white",
         }}
       >
         <Fab color="primary" aria-label="add">
@@ -63,7 +65,7 @@ const Add = () => {
         <Box
           width={400}
           height={280}
-          bgcolor={"white"}
+          bgcolor={"background.default"}
           color={"text.primary"}
           p={3}
           borderRadius={5}
@@ -83,7 +85,8 @@ const Add = () => {
           <TextField
             sx={{
               width: "100%",
-              backgroundColor: "white",
+              backgroundColor: "background.default",
+              color: "text.primary",
               "& .MuiInput-underline:before": { borderBottom: "none" },
               "& .MuiInput-underline:after": { borderBottom: "none" },
               "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
@@ -114,6 +117,7 @@ const Add = () => {
                 "&:hover": {
                   backgroundColor: "#ff9800",
                 },
+                color: "white",
               }}
               onClick={(e) => setOpen(false)}
             >
@@ -122,6 +126,7 @@ const Add = () => {
             <Button
               sx={{
                 width: "100px",
+                color: "white",
                 backgroundColor: "#fb8c00",
                 "&:hover": {
                   backgroundColor: "#ff9800",
