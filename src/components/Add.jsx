@@ -84,8 +84,11 @@ const Add = () => {
             sx={{
               width: "100%",
               backgroundColor: "white",
-              "& .MuiInput-underline:before": { borderBottom: "none" }, // Remove underline before focus
-              "& .MuiInput-underline:after": { borderBottom: "none" }, // Remove underline after focus
+              "& .MuiInput-underline:before": { borderBottom: "none" },
+              "& .MuiInput-underline:after": { borderBottom: "none" },
+              "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
+                borderBottom: "none",
+              },
             }}
             id="standard-multiline-static"
             multiline
@@ -112,6 +115,7 @@ const Add = () => {
                   backgroundColor: "#ff9800",
                 },
               }}
+              onClick={(e) => setOpen(false)}
             >
               Post
             </Button>
