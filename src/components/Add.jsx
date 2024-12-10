@@ -45,6 +45,9 @@ const Add = () => {
           bottom: 20,
           left: { xs: "calc(50% - 25px)", md: 30 },
           backgroundColor: "#fb8c00",
+          "&:hover": {
+            backgroundColor: "#ff9800",
+          },
         }}
       >
         <Fab color="primary" aria-label="add">
@@ -60,7 +63,7 @@ const Add = () => {
         <Box
           width={400}
           height={280}
-          bgcolor={"background.default"}
+          bgcolor={"white"}
           color={"text.primary"}
           p={3}
           borderRadius={5}
@@ -78,13 +81,19 @@ const Add = () => {
             </Typography>
           </UserBox>
           <TextField
-            sx={{ width: "100%", backgroundColor: "white" }}
+            sx={{
+              width: "100%",
+              backgroundColor: "white",
+              "& .MuiInput-underline:before": { borderBottom: "none" }, // Remove underline before focus
+              "& .MuiInput-underline:after": { borderBottom: "none" }, // Remove underline after focus
+            }}
             id="standard-multiline-static"
             multiline
             rows={3}
             placeholder="What's on your mind?"
             variant="standard"
           />
+
           <Stack direction="row" gap={1} mt={2} mb={3}>
             <EmojiEmotions color="primary" />
             <Image color="secondary" />
@@ -96,8 +105,25 @@ const Add = () => {
             variant="contained"
             aria-label="outlined primary button group"
           >
-            <Button>Post</Button>
-            <Button sx={{ width: "100px", backgroundColor: "#fb8c00" }}>
+            <Button
+              sx={{
+                backgroundColor: "#fb8c00",
+                "&:hover": {
+                  backgroundColor: "#ff9800",
+                },
+              }}
+            >
+              Post
+            </Button>
+            <Button
+              sx={{
+                width: "100px",
+                backgroundColor: "#fb8c00",
+                "&:hover": {
+                  backgroundColor: "#ff9800",
+                },
+              }}
+            >
               <DateRange />
             </Button>
           </ButtonGroup>
